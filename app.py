@@ -18,7 +18,7 @@ api.add_resource(
 )
 api.add_resource(
     AccountResource,
-    '/accounts',
+    '/api/accountcreation',
     '/accounts/<string:account_number>'
 )
 

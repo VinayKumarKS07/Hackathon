@@ -10,8 +10,7 @@ class CustomerResource(Resource):
 
         try:
             data = request.get_json()
-            
-        
+
             # required_fields = ['full_name', 'email', 'phone_number']
             # for field in required_fields:
             #     if field not in data:
