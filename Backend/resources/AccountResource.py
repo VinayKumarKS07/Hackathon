@@ -56,7 +56,7 @@ class AccountResource(Resource):
                         'account_type': account.account_type,
                         'balance': account.balance,
                         'status': account.status,
-                        'customer_id': account.customer_id,
+                        'customer_id': str(account.customer_id),
                         'created_at': account.created_at.isoformat()
                     }
                 }, 200
