@@ -124,7 +124,7 @@ output:
 }
 
 Validations:
-Account type as per requirement
-initial_deposit validation.
-System Generates Account Number
+--Account type as per requirement
+--initial_deposit validation.
+--System Generates Account Number
 
