@@ -48,9 +48,41 @@ Creates a new Account for the existing customer
 **Input:**
 json
 {
-  "customer_id": "uuid-1234",
-  "account_type": "Savings",
-  "initial_deposit": 1500
+  "customer_id": "ad7d4fda-6606-4aaa-bdf4-16bf096fec56",
+  "account_type": "Checking",
+  "initial_deposit": 1700
+}
+
+**output**
+json
+{
+    "message": "Account created successfully",
+    "account": {
+        "id": 7,
+        "account_number": "280399659126",
+        "account_type": "Checking",
+        "balance": 1700.0,
+        "status": "Active",
+        "customer_id": "ad7d4fda-6606-4aaa-bdf4-16bf096fec56",
+        "created_at": "2025-10-25T09:57:15.520000"
+    }
+}
+
+### GET/api/Account/{account_number}
+
+input :(280399659126)account_number 
+
+output:
+{
+ "account": {
+        "id": 7,
+        "account_number": "280399659126",
+        "account_type": "Checking",
+        "balance": 1700.0,
+        "status": "Active",
+        "customer_id": "ad7d4fda-6606-4aaa-bdf4-16bf096fec56",
+        "created_at": "2025-10-25T09:57:15.520000"
+    }
 }
 
 ### POST/api/customers
@@ -64,3 +96,31 @@ json
   "phone_number": "9876543210",
   "address": "Bengaluru, India"
 }
+
+**output**
+{
+    "message":"Customer Created Successfully",
+    "customer": {
+        "id": "58eba8cd-5fe4-443d-b9b5-225109494d5e",
+        "full_name": "John Doe",
+        "email": "john@example.com",
+        "phone_number": "9876543210",
+        "address": "Bengaluru, India",
+        "created_at": "2025-10-25T08:49:09.190000"
+    }
+
+    
+### GET/api/customers/{Customer_Id}
+input:58eba8cd-5fe4-443d-b9b5-225109494d5e(Customer_id)
+output:
+{ "customer": {
+        "id": "58eba8cd-5fe4-443d-b9b5-225109494d5e",
+        "full_name": "John Doe",
+        "email": "john@example.com",
+        "phone_number": "9876543210",
+        "address": "Bengaluru, India",
+        "created_at": "2025-10-25T08:49:09.190000"
+    }
+}
+
+
