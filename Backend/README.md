@@ -31,7 +31,7 @@ Linked to the customer through a foreign key.
 | Field | Type | Description |
 |-------|------|-------------|
 | id | Integer | Primary key |
-| account_number | String(12) | Auto-generated |
+| account_number | String(12) | Random Generation or Auto Generation as per Requirement |
 | account_type | String | Savings / Current / Fixed Deposit |
 | balance | Float | Initial balance |
 | status | String | Active / Pending |
@@ -85,7 +85,7 @@ output:
     }
 }
 
-### POST/api/customers
+### POST/customers
 Creates a new customer. 
 
 **Input:**
@@ -110,7 +110,7 @@ json
     }
 
     
-### GET/api/customers/{Customer_Id}
+### GET/customers/{Customer_Id}
 input:58eba8cd-5fe4-443d-b9b5-225109494d5e(Customer_id)
 output:
 { "customer": {
@@ -123,4 +123,8 @@ output:
     }
 }
 
+Validations:
+Account type as per requirement
+initial_deposit validation.
+System Generates Account Number
 
